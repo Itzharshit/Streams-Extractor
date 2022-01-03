@@ -19,10 +19,10 @@ async def confirm_dwnld(client, message):
 
     if filetype.mime_type.startswith("video/"):
         await message.reply_text(
-            "**What you want me to do??**",
+            "𝗣𝗹𝗲𝗮𝘀𝗲 𝘀𝗲𝗹𝗲𝗰𝘁 𝗱𝗲𝘀𝗶𝗿𝗲𝗱 𝗼𝗽𝘁𝗶𝗼𝗻:",
             quote=True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(text="DOWNLOAD and PROCESS", callback_data="download_file")],
+                [InlineKeyboardButton(text="PROCESS", callback_data="download_file")],
                 [InlineKeyboardButton(text="CANCEL", callback_data="close")]
             ])
         )
