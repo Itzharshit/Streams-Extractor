@@ -25,8 +25,11 @@ async def start(client, message):
                 [
                     InlineKeyboardButton(
                         "Join Updates Channel", url="https://t.me/pyrogrammers")
+                ],
+                [
+                     InlineKeyboardButton("𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥", url="https://t.me/+7ScFy39Vckk5MWQ1"),
+                     InlineKeyboardButton("𝙐𝙥𝙙𝙖𝙩𝙚𝙨 𝘾𝙝𝙖𝙣𝙣𝙚𝙡", url="https://t.me/pyrogrammers")],
                 ]
-            ]
         ),
         reply_to_message_id=message.message_id
     )
