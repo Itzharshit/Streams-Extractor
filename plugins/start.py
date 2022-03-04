@@ -14,7 +14,7 @@ from script import Script
 @trojanz.on_message(filters.command(["start"]) & filters.private)
 async def start(client, message):
     await message.send_photo(
-        chat_id=m.chat.id,
+        chat_id = message.from_user.id
         photo="https://i.ibb.co/NKXgXD4/vlmnwosn-0.png",
         caption=Script.START_MSG.format(message.from_user.mention),
         disable_web_page_preview=True,
