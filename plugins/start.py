@@ -13,8 +13,9 @@ from script import Script
 
 @trojanz.on_message(filters.command(["start"]) & filters.private)
 async def start(client, message):
-    await message.reply_text(
-        text=Script.START_MSG.format(message.from_user.mention),
+    await message.send_photo(
+        photo="https://i.ibb.co/NKXgXD4/vlmnwosn-0.png",
+        caption=Script.START_MSG.format(message.from_user.mention),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
