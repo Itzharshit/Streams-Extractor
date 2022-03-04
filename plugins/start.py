@@ -30,6 +30,8 @@ async def start(client, message):
                      InlineKeyboardButton("Support Group", url="https://t.me/+7ScFy39Vckk5MWQ1"),
                      InlineKeyboardButton("Updates Channel", url="https://t.me/pyrogrammers"),
                 ],
+            ]
+
         ),
         reply_to_message_id=message.message_id
     )
