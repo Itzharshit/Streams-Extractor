@@ -22,9 +22,9 @@ async def cb_handler(client, query):
     if query.data == "start_data":
         await query.answer()
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("HELP", callback_data="help_data"),
-                InlineKeyboardButton("ABOUT", callback_data="about_data")],
-            [InlineKeyboardButton("Join Updates Channel", url="https://t.me/Pyrogrammers")]
+            [InlineKeyboardButton("📚 HELP", callback_data="help_data"),
+                InlineKeyboardButton("🌐 ABOUT", callback_data="about_data")],
+            [InlineKeyboardButton("🤖 YouTube Channel", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw")]
         ])
 
         await query.message.edit_text(
@@ -38,9 +38,9 @@ async def cb_handler(client, query):
     elif query.data == "help_data":
         await query.answer()
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("BACK", callback_data="start_data"),
-                InlineKeyboardButton("ABOUT", callback_data="about_data")],
-            [InlineKeyboardButton("Support Group", url="https://t.me/+7ScFy39Vckk5MWQ1")]
+            [InlineKeyboardButton("🔙 BACK", callback_data="start_data"),
+                InlineKeyboardButton("🌐 ABOUT", callback_data="about_data")],
+            [InlineKeyboardButton("📺 YouTube Channel", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw")]
         ])
 
         await query.message.edit_text(
@@ -54,8 +54,8 @@ async def cb_handler(client, query):
     elif query.data == "about_data":
         await query.answer()
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("BACK", callback_data="help_data"),
-                InlineKeyboardButton("START", callback_data="start_data")],
+            [InlineKeyboardButton("🔙 BACK", callback_data="help_data"),
+                InlineKeyboardButton("🤖 START", callback_data="start_data")],
             
         ])
 
