@@ -13,7 +13,7 @@ from script import Script
 
 @trojanz.on_message(filters.command(["start"]) & filters.private)
 async def start(client, message):
-    await message.send_photo(
+    await message.reply_photo(
         photo="https://telegra.ph/file/ee55f7eba46e03062a300.jpg",
         caption=Script.START_MSG.format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
