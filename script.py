@@ -6,7 +6,6 @@
 class Script(object):
 
     START_MSG = """Hii {},
-
 I am Stream Extractor bot, I can extract audio and subtitles from any video file.
 Hit /help to know more."""
 
