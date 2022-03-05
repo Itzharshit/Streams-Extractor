@@ -19,16 +19,16 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("HELP", callback_data="help_data"),
-                    InlineKeyboardButton("ABOUT", callback_data="about_data"),
+                    InlineKeyboardButton("📚 HELP", callback_data="help_data"),
+                    InlineKeyboardButton("🌐 ABOUT", callback_data="about_data"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "YouTube Channel", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw")
+                        "📺 YouTube Channel", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw")
                 ],
                 [
-                     InlineKeyboardButton("Support Group", url="https://t.me/+7ScFy39Vckk5MWQ1"),
-                     InlineKeyboardButton("Updates Channel", url="https://t.me/pyrogrammers"),
+                     InlineKeyboardButton("🔰 Support Group", url="https://t.me/+7ScFy39Vckk5MWQ1"),
+                     InlineKeyboardButton("🔮 Updates Channel", url="https://t.me/pyrogrammers"),
                 ],
             ]
 
@@ -45,12 +45,12 @@ async def help(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("BACK", callback_data="start_data"),
-                    InlineKeyboardButton("ABOUT", callback_data="about_data"),
+                    InlineKeyboardButton("🔙 BACK", callback_data="start_data"),
+                    InlineKeyboardButton("🌐 ABOUT", callback_data="about_data"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "YouTube Channel", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw")
+                        "📺 YouTube Channel", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw")
                 ]
             ]
         ),
@@ -66,8 +66,8 @@ async def about(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("BACK", callback_data="help_data"),
-                    InlineKeyboardButton("START", callback_data="start_data"),
+                    InlineKeyboardButton("🔙 BACK", callback_data="help_data"),
+                    InlineKeyboardButton("🤖 START", callback_data="start_data"),
                 ],
                 
             ]
