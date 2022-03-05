@@ -11,10 +11,10 @@ Send me any video file to continue."""
 
 
     HELP_MSG = """<b>You can follow below steps to use me.</b>
-<i>Send me any video file.</i>
-<i>Click Download and Process button to download the file.</i>
-<i>Wait untill processing the video!</i>
-<i>After that select the stream you need to extract!</i>"""
+Send me any video file.
+Click Download and Process button to download the file.
+Wait untill processing the video!
+After that select the stream you need to extract!"""
 
 
     ABOUT_MSG = """<b>Streams Extractor Bot</b>
